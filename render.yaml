@@ -9,13 +9,13 @@ services:
     startCommand: "n8n start"
     envVars:
       - key: N8N_HOST
-        value: ${RENDER_SERVICE_NAME}.onrender.com
+        value: n8n-hrew.onrender.com
       - key: N8N_PORT
         value: 8080
       - key: N8N_PROTOCOL
         value: https
       - key: WEBHOOK_URL
-        value: https://${RENDER_SERVICE_NAME}.onrender.com/
+        value: https://n8n-hrew.onrender.com
       - key: NODE_ENV
         value: production
       - key: DB_TYPE
@@ -40,6 +40,8 @@ services:
         fromDatabase:
           name: n8n-db
           property: port
+      - key: N8N_ENCRYPTION_KEY
+        value: mysecretenckey1234567890abcdef
 
 databases:
   - name: n8n-db
