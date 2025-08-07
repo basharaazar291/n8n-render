@@ -23,7 +23,7 @@ services:
       - key: DB_POSTGRESDB_HOST
         fromDatabase:
           name: n8n-db
-          property: connectionString
+          property: host
       - key: DB_POSTGRESDB_USER
         fromDatabase:
           name: n8n-db
@@ -35,7 +35,7 @@ services:
       - key: DB_POSTGRESDB_DATABASE
         fromDatabase:
           name: n8n-db
-          property: databaseName
+          property: database
       - key: DB_POSTGRESDB_PORT
         fromDatabase:
           name: n8n-db
