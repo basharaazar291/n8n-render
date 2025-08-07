@@ -41,7 +41,13 @@ services:
           name: n8n-db
           property: port
       - key: N8N_ENCRYPTION_KEY
-        value: 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
+        value: v87PXzFkQ9rL2tMAyYgVbDw6U5eCZx1K
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: strongpassword123
 
 databases:
   - name: n8n-db
