@@ -41,7 +41,7 @@ services:
           name: n8n-db
           property: port
       - key: N8N_ENCRYPTION_KEY
-        value: mysecretenckey1234567890abcdef
+        value: 0996891380b0991839676b0991850825
 
 databases:
   - name: n8n-db
